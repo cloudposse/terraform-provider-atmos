@@ -8,8 +8,6 @@ import (
 )
 
 func TestSpaceliftStackProcessorWithTerraform(t *testing.T) {
-	t.Parallel()
-
 	terraformOptions := &terraform.Options{
 		// The path to where our Terraform code is located
 		TerraformDir: "./",

@@ -22,6 +22,7 @@ func New(version string) func() *schema.Provider {
 				"atmos_spacelift_stack_config":    dataSourceSpaceliftStackConfig(),
 				"atmos_component_config":          dataSourceComponentConfig(),
 				"atmos_aws_eks_update_kubeconfig": dataSourceAwsEksUpdateKubeconfig(),
+				"atmos_label":                     dataSourceLabel(),
 			},
 		}
 
