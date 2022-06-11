@@ -16,5 +16,5 @@ func TestLabel(t *testing.T) {
 	var label, err = CreateLabel(namespace, tenant, environment, stage, name, delimiter)
 	assert.Nil(t, err)
 	assert.Equal(t, "eg-plat-ue2-dev-test", label)
-	t.Log(string(label))
+	t.Log(label)
 }

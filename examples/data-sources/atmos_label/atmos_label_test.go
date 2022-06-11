@@ -24,5 +24,5 @@ func TestLabelWithTerraform(t *testing.T) {
 	// Verify we're getting back the outputs we expect
 	assert.Equal(t, "eg-plat-ue2-dev-test", label1)
 
-	t.Log(string(label1))
+	t.Log(label1)
 }
