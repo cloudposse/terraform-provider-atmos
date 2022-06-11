@@ -1,13 +1,13 @@
 ---
 layout: ""
-page_title: "Provider: Cloud Posse Utils"
+page_title: "Provider: Cloud Posse Atmos"
 description: |-
-  The utils provider contains data sources to perform tasks that are difficult to perform in raw Terraform.
+  Terraform provider for atmos utilities for stack and component configuration management.
 ---
 
-# Cloud Posse Utils Provider
+# Cloud Posse Atmos Provider
 
-The utils provider contains data sources to perform tasks that are difficult to perform in raw Terraform.
+Terraform provider for atmos utilities for stack and component configuration management.
 
 ## Example Usage
 
