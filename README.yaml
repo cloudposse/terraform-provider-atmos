@@ -58,7 +58,7 @@ usage: |-
   ```hcl
   terraform {
     required_providers {
-      utils = {
+      atmos = {
         source = "cloudposse/atmos"
         version = ">= 1.0.0"
       }

@@ -37,7 +37,7 @@ With that in place, you can build the provider (see above) and add a provider bl
 
 ```hcl
 required_providers {
-    utils = {
+    atmos = {
       source = "cloudposse/atmos"
     }
   }
