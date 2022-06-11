@@ -1,6 +1,6 @@
 ## Developing the Provider
 
-If you wish to work on the provider, you'll first need [Go](http://www.golang.org) installed on your machine (see [Requirements](#requirements) above).
+If you wish to work on the provider, you'll first need [Go](http://www.golang.org) installed on your machine.
 
 To compile the provider, run `go install`. This will build the provider and put the provider binary in the `$GOPATH/bin` directory.
 
@@ -60,53 +60,4 @@ The following provider development overrides are set in the CLI configuration:
 The behavior may therefore not match any released version of the provider and
 applying changes may cause the state to become incompatible with published
 releases.
-```
-
-```sh
-terraform apply
-
-Warning: Provider development overrides are in effect
-
-The following provider development overrides are set in the CLI configuration:
- - cloudposse/utils in /Users/matt/code/src/github.com/cloudposse/terraform-provider-atmos
-
-The behavior may therefore not match any released version of the provider and
-applying changes may cause the state to become incompatible with published
-releases.
-
-
-An execution plan has been generated and is shown below.
-Resource actions are indicated with the following symbols:
-
-Terraform will perform the following actions:
-
-Plan: 0 to add, 0 to change, 0 to destroy.
-
-Changes to Outputs:
-  + deep_merge_output = <<-EOT
-        Statement:
-        - Action:
-          - s3:*
-          Effect: Allow
-          Resource:
-          - '*'
-          Sid: FullAccess
-        - Action:
-          - s3:*
-          Complex:
-            ExtraComplex:
-              ExtraExtraComplex:
-                Foo: bazzz
-                SomeArray:
-                - one
-                - two
-                - three
-          Effect: Deny
-          Resource:
-          - arn:aws:s3:::customer
-          - arn:aws:s3:::customer/*
-          - foo
-          Sid: DenyCustomerBucket
-        Version: "2012-10-17"
-    EOT
 ```
