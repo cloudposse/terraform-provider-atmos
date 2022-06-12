@@ -22,7 +22,7 @@ func main() {
 	opts := &plugin.ServeOpts{ProviderFunc: provider.New(version)}
 
 	if debugMode {
-		err := plugin.Debug(context.Background(), "registry.terraform.io/cloudposse/utils", opts)
+		err := plugin.Debug(context.Background(), "registry.terraform.io/cloudposse/atmos", opts)
 		if err != nil {
 			log.Fatal(err.Error())
 		}
