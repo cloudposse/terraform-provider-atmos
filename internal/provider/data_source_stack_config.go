@@ -2,11 +2,12 @@ package provider
 
 import (
 	"context"
+	"strings"
+
 	c "github.com/cloudposse/atmos/pkg/convert"
 	s "github.com/cloudposse/atmos/pkg/stack"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"strings"
 )
 
 func dataSourceStackConfig() *schema.Resource {
@@ -69,7 +70,6 @@ func dataSourceStackConfigYAMLRead(ctx context.Context, d *schema.ResourceData, 
 		paths,
 		processStackDeps.(bool),
 		processComponentDeps.(bool))
-
 	if err != nil {
 		return diag.FromErr(err)
 	}

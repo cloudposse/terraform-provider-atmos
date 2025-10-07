@@ -13,7 +13,6 @@ func init() {
 	schema.DescriptionKind = schema.StringMarkdown
 }
 
-// New creates a new provider and returns a *schema.Provider
 func New(version string) func() *schema.Provider {
 	return func() *schema.Provider {
 		p := &schema.Provider{

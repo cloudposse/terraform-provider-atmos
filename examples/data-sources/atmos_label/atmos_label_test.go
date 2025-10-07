@@ -1,9 +1,10 @@
 package spacelift
 
 import (
+	"testing"
+
 	"github.com/gruntwork-io/terratest/modules/terraform"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func TestLabelWithTerraform(t *testing.T) {

@@ -58,5 +58,3 @@ data "atmos_component_config" "example2" {
 
 - `id` (String) The ID of this resource.
 - `output` (String) Component configuration.
-
-

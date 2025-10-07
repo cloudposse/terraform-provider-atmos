@@ -1,6 +1,6 @@
 module github.com/cloudposse/terraform-provider-atmos
 
-go 1.18
+go 1.24.1
 
 require (
 	github.com/cloudposse/atmos v1.4.20

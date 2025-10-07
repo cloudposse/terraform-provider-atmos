@@ -1,8 +1,9 @@
 package label
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLabel(t *testing.T) {
@@ -13,7 +14,7 @@ func TestLabel(t *testing.T) {
 	name := "test"
 	delimiter := "-"
 
-	var label, err = CreateLabel(namespace, tenant, environment, stage, name, delimiter)
+	label, err := CreateLabel(namespace, tenant, environment, stage, name, delimiter)
 	assert.Nil(t, err)
 	assert.Equal(t, "eg-plat-ue2-dev-test", label)
 	t.Log(label)

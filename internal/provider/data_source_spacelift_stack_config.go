@@ -2,6 +2,7 @@ package provider
 
 import (
 	"context"
+
 	c "github.com/cloudposse/atmos/pkg/convert"
 	s "github.com/cloudposse/atmos/pkg/spacelift"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
@@ -84,7 +85,6 @@ func dataSourceSpaceliftStackConfigRead(ctx context.Context, d *schema.ResourceD
 		processComponentDeps.(bool),
 		processImports.(bool),
 		stackConfigPathTemplate.(string))
-
 	if err != nil {
 		return diag.FromErr(err)
 	}

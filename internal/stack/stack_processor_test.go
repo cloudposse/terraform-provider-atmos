@@ -1,12 +1,13 @@
 package stack
 
 import (
+	"testing"
+
 	c "github.com/cloudposse/atmos/pkg/convert"
 	s "github.com/cloudposse/atmos/pkg/stack"
 	u "github.com/cloudposse/atmos/pkg/utils"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v2"
-	"testing"
 )
 
 func TestStackProcessor(t *testing.T) {
@@ -24,7 +25,7 @@ func TestStackProcessor(t *testing.T) {
 	processStackDeps := true
 	processComponentDeps := true
 
-	var listResult, mapResult, err = s.ProcessYAMLConfigFiles(
+	listResult, mapResult, err := s.ProcessYAMLConfigFiles(
 		stacksBasePath,
 		terraformComponentsBasePath,
 		helmfileComponentsBasePath,

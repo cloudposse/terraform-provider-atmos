@@ -1,10 +1,11 @@
 package spacelift
 
 import (
+	"testing"
+
 	s "github.com/cloudposse/atmos/pkg/spacelift"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v2"
-	"testing"
 )
 
 func TestSpaceliftStackProcessor(t *testing.T) {
@@ -13,7 +14,7 @@ func TestSpaceliftStackProcessor(t *testing.T) {
 	processImports := true
 	stackConfigPathTemplate := "stacks/%s.yaml"
 
-	var spaceliftStacks, err = s.CreateSpaceliftStacks(
+	spaceliftStacks, err := s.CreateSpaceliftStacks(
 		"",
 		"",
 		"",

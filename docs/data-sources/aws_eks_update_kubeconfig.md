@@ -126,5 +126,3 @@ data "atmos_aws_eks_update_kubeconfig" "example4" {
 
 - `id` (String) The ID of this resource.
 - `output` (String) Output.
-
-

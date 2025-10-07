@@ -1,10 +1,11 @@
 package component
 
 import (
+	"testing"
+
 	c "github.com/cloudposse/atmos/pkg/component"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v2"
-	"testing"
 )
 
 func TestComponentProcessor(t *testing.T) {
